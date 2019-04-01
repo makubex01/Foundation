@@ -58,8 +58,8 @@ class CookieSession:
         if not self.modified: return
         path = self.SESSION_DIR + "/" + self.sid
         #JSON形式に変換して保存
-        a_json = json.dumps(self,values)
-        with open(path, "W", encoding="utf-8") as f:
+        a_json = json.dumps(self.values)
+        with open(path, "w", encoding="utf-8") as f:
             f.write(a_json)
 
     #添字アクセスのための特殊メソッドを定義
