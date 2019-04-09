@@ -1,0 +1,4 @@
+#coding:utf-8
+for a in range(0,100):
+    print(a + 1)
+    print("こんにちは")
